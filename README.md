@@ -106,7 +106,6 @@ ohpm install @tencent/mmkv
 }
 ```
 
-> **⚠️ 重要**：`@tencent/mmkv` HAR 包内置了 `libmmkv.so`，HarmonyOS 构建系统会通过 HAR 包的 `nativeComponents` 声明自动将其打包到 HAP 中。**请勿**在 `CMakeLists.txt` 中添加 `libmmkv.so` 的链接配置，否则会导致 `libentry.so` 加载失败（表现为 `Cannot read property initKuikly of undefined` 错误）。MMKV 的初始化由 `KRMMKVModule` 在首次调用时自动完成，**无需手动调用 `MMKV.initialize()`**。
 
 #### 注册 Module
 
