@@ -1,0 +1,12 @@
+{
+  "name": "kuikly-mmkv-ohos",
+  "version": "0.1.0",
+  "description": "KuiklyMMKV HarmonyOS 原生 Module",
+  "main": "KRMMKVModule.ets",
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@kuikly-open/render": "2.7.0",
+    "@tencent/mmkv": "2.1.0"
+  }
+}

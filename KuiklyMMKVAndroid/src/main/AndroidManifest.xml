@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application>
+        <!-- 自动初始化 MMKV，业务方无需手动调用 MMKV.initialize() -->
+        <provider
+            android:name="com.tencent.kuiklybase.mmkv.MMKVInitProvider"
+            android:authorities="${applicationId}.mmkv-init"
+            android:exported="false"
+            android:initOrder="90" />
+    </application>
+
+</manifest>
